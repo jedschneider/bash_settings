@@ -1,0 +1,43 @@
+h1. My Bash Settings
+
+basically, I just wanted to keep my bash profile changes updated in one place. If anyone wants to use them, please feel free to do so.
+
+h2. Installation
+
+# From Terminal.app, change into your home directory
+<pre>cd</pre>
+# Clone this project or download and install to the home directory
+<pre>clone git://github.com/jedschneider/bash_settings.git</pre> 
+# Rename your existing bash profile 
+<pre>mv .bash_profile .bash_profile.back</pre>
+# Symlink the new profile 
+<pre>ln -s ~/bash_settings/.bash_profile ~/.bash_profile</pre>
+# Restart Your Bash Shell (quitting and launching terminal should be sufficient, logout may be necessary)
+
+h3. Description
+
+Here is a list of my changes made to the shell environment
+
+h4. Macports
+
+Macports is a package management system I use to manage my git and ruby installs. It works great to install git-svn (some perl bindings in the standard os x install of subversion cause conflicts) which is a git add-on library to manage subversion repositories through git. 
+Libraries I manage with macports:
+
+* ruby
+* rails
+* mysql
+* rubygems
+* mongrel
+* git
+
+h4. Terminal Prompt
+
+Use PS1 to modify the terminal look
+
+h4. Aliases
+
+Mostly shortcuts for git commands. @ls@ lists all files and in Mac OS X, it lists file types in ASCII color.
+
+h4. Coldfusion
+
+I have a local eg. @~/username/Applications/ColdFusion@ copy of cold fusion installed, that way I don't need sudo access to write to and from the coldfusion web root when testing CF/Flex applications locally. Also included are a couple shortcuts to start and stop the coldfusion server.
