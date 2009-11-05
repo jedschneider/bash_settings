@@ -7,7 +7,7 @@ h2. Installation
 # From Terminal.app, change into your home directory
 <pre>cd</pre>
 # Clone this project or download and install to the home directory
-<pre>clone git://github.com/jedschneider/bash_settings.git</pre> 
+<pre>git clone git://github.com/jedschneider/bash_settings.git</pre> 
 # Rename your existing bash profile 
 <pre>mv .bash_profile .bash_profile.back</pre>
 # Symlink the new profile 
